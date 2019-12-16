@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+<body>
+    <!-- Emphasis -->
+    <p>가끔 눈물을 흘린다. 눈물을 참을 수 없는 나 자신이 싫은 순간도 있다. 아픈 마음을 달래기 위해, 소리치며 울 수 있다는 건 좋은 거야. 그렇지? 눈물은 슬픔을 위한 것만은 아니니까. 
+        <br/>
+        <br/>
+        난 눈물이 좋다. <br/>
+        아니, 머리가 아닌 <em>마음으로 우는 내가 좋다.</em></p>
+
+        <br/>
+
+    <!-- Lists
+        : ul과, ol의 자식요소는 무조건 li(list item)만 가능! -->
+        <h1>개발 분야</h1>
+        <ul>
+            <li>웹 개발자</li>
+            <li>서버 개발자</li>
+            <li>서버 개발자</li> 
+            <li>프론트엔드 개발자</li>
+            <li>자바 개발자</li>
+            <li>안드로이드 개발자</li>
+            <li>iOS 개발자</li>
+            <li>파이썬 개발자</li>
+            <li>시스템,네트워크 관리자</li>
+        </ul>
+
+        <h1>급상승 검색어</h1>
+            <!-- line 33과 34중 34가 맞는 방법! a tag는 li tag 안에서 사용해야한다. -->
+            <ol>
+                <a><li>개발자</li></a>
+                <li><a>프론트엔드 개발</a></li>
+                <li>구름</li>
+                <li>주니어개발자</li>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>개발자</li>
+                <li>Fullstack</li>
+                <li>html</li>
+            </ol>
+        <!-- Desciption List 정의 리스트
+            1. 용어를 정의 할 때 사용하는 리스트
+            2. key : value 로 정보를 제공하고 싶을 때 사용 -->
+            <dl>
+                <!-- key - description term -->
+                <!-- dl의 자식요소는 오직 div, dt, dd만 가능하다! -->
+                <!-- dt, dd는 반드시 dl의 자식요소로 존재해야 한다! -->
+                <dt>학습 <dfn>學習 [학씁]</dfn></dt>
+                <!-- value - description data -->
+                <dd>1. noun 배워서 익힘.</dd>
+                <dd>2. noun 심리 경험의 결과로 나타나는, 비교적 지속적인 행동의 변화나 그 잠재력의 변화. 또는 지식을 습득하는 과정</dd>
+            </dl>
+            <dl>
+                <dt>OPEN</dt>
+                <dd>월요일</dd>
+                <dd>화요일</dd>
+                <dd>수요일</dd>
+                <dd>목요일</dd>
+                <dd>금요일</dd>
+                <dt>CLOSE</dt>
+                <dd>토요일</dd>
+                <dd>일요일</dd>
+                <dd>공휴일</dd>
+            </dl>
+
+            <!-- Quotations 인용문 -->
+            <blockquote cite="https://https://ko.wikipedia.org/wiki/%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%8A%B8_%EC%95%84%EC%9D%B8%EC%8A%88%ED%83%80%EC%9D%B8">
+                우리가 겪을 수 있는 가장 아름다운 체험은 신비다. <br>
+                신비는 모든 참 예술과 과학의 근원이다.
+                <cite>알버트 아인슈타인</cite>
+            </blockquote>
+            
+            <blockquote cite="https://bit.ly/2mvSYrT">
+                <p><q>It's not happy news for the emperor penguin</q>, said Hal Castellan of the U.S. Woods Hole Oceanographic Institution, a co-author of the study in the journal Nature Climate Change.
+                <br/><cite>“Emperor Penguin Population to Slide Due to Climate Change”, Scientific American, June 29, 2014, https://bit.ly/2mvSYrT</cite></p>
+            </blockquote>
+        </body>
+</html>
