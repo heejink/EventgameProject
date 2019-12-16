@@ -12,7 +12,8 @@
 	<!-- Form(1) : <form action="api주소" method="GET/POST"></form> -->
   <!-- Form(2) : input tags -->
   <!-- Form(3) : label tag ; 부가적인 태그, input에 대한 이름(label) -->
-  <!-- Form(4) : radioo & checkbox -->
+  <!-- Form(4) : radio & checkbox -->
+  <!-- Form(5) : select & option -->
     <form action="#" method="GET">
       <label for="user-id">아이디</label>
       <input type="text" id="user-id" placeholder="아이디" maxlength="13" minlength="5" />
@@ -26,9 +27,16 @@
       <label for="user-email">이메일</label>
       <input type="email" id="user-email" placeholder="이메일" />
       
-      <!-- radio는 name을 공통으로 부여 -->
-      <label for="female">F</label>
-      <input type="radio" id="female" name="user-sex">
+      <!-- radio는 name을 공통으로 부여, name=value 가 서버에 전달된다. -->
+      <label for="usersex">성별</label>
+      <div id="usersex">
+        <label for="female">여성</label>
+        <input type="radio" id="female" name="user-sex" value="0">
+        <label for="male">남성</label>
+        <input type="radio" id="male" name="user-sex" value="1"> 
+        <label for="others">기타</label>
+        <input type="radio" id="others" name="user-sex" value="2">
+       </div>
 
       <label for="user-age">만 나이</label>
       <input type="number" id="user-age" placeholder="만 나이를 입력하세요. (12세 ~ 121세)" min="12" max="121" />
@@ -41,10 +49,30 @@
       
       <label for="user-pic">프로필 사진</label>
       <input type="file" id="user-pic" accept="image/*, audio/*, video/*" />
+      
+      <label for="userentering">가입 경로</label>
+      <div id="userentering">
+        <label for="recommendation">지인 추천</label>
+        <input type="checkbox" name="user-entering" id="recommendation" value="recommendation"/>
+        <label for="internet">인터넷</label>
+        <input type="checkbox" name="user-entering" id="internet" value="internet">
+        <label for="otherway">기타</label>
+        <input type="checkbox" name="user-entering" id="otherway" value="otherway">
+      </div>
+
+      <label for="skill">사용 언어</label>
+      <select multiple id="skill" name="skill">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">Javascript</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="c">C</option>
+      </select>
+      <br/>
+      <br/>
       <button>가입하기</button>
     </form>
-
-  <!-- Form(3) : label tag ; 부가적인 태그, input에 대한 이름(label) -->
 
 </body>
 </html>
