@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Table</title>
+        <link rel="stylesheet" href="../css/tstyles.css">
+    </head>
+    <body>
+        <!-- table은 thead와 tbody로 구성, thead의 th 셀과 tbody의 td셀 갯수는 일치 -->
+        <!-- 총합 같은 tr을 넣을 때 tfoot tag 사용-->
+        <!-- th tag의 attr : scope, 세로 th는 col, 가로 th는 row -->
+        <table>
+            <thead>
+               <tr>
+                   <th></th>
+                   <th scope="col">월요일</th>
+                   <th scope="col">화요일</th>
+                   <th scope="col">수요일</th>
+                   <th scope="col">목요일</th>
+                   <th scope="col">금요일</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1st class</th>
+                    <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                    <td>js project</td>
+                    <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                    <td>js project</td>
+                    <td rowspan="2">왕초보 HTML &amp; CSS</td>
+                </tr>
+                <tr>
+                    <th scope="row">2nd class</th>
+                    <td rowspan="2">Javascript skillup</td>
+                    <td rowspan="2">Javascript skillup</td>
+                </tr>
+                <tr>
+                    <th scope="row">3rd class</th>
+                    <td>Javascript basic</td>
+                    <td>Javascript basic</td>
+                    <td>Javascript basic</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th scope="row" colspan="6">점심시간</th>
+                </tr>
+                <tr>
+                    <th scope="row">4th class</th>
+                    <td>Sass basic</td>
+                    <td rowspan="2">HTML &amp; CSS Portfolio</td>
+                    <td rowspan="2">Open seminar</td>
+                    <td rowspan="2">HTML &amp; CSS Portfolio</td>
+                    <td>Sass basic</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">5th class</th>
+                    <td>js project</td>
+                    <td>js project</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
